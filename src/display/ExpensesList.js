@@ -11,7 +11,7 @@ export class ExpensesList extends Component {
                             <th>Amount</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    {/* <tbody> */}
                     <BudgetConsumer>
                         {value=>{
                             const expensesList=value.expenses.length>0?(
@@ -31,7 +31,7 @@ export class ExpensesList extends Component {
                             return <tbody>{expensesList}</tbody>
                         }}
                     </BudgetConsumer>
-                    </tbody>
+                    {/* </tbody> */}
                 </table>
             </div>
         )
